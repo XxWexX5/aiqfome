@@ -51,6 +51,24 @@ export default function Home() {
         <Icon.Trash className="w-10 h-10" classNameInline="fill-neutral-full" />
 
         <Icon.Edit className="w-10 h-10" classNameInline="fill-neutral-full" />
+
+        <div className="size-10">
+          <Button.Circle className="hover:scale-110">
+            <Icon.Plus
+              className="size-full scale-70"
+              classNameInline="fill-neutral-full"
+            />
+          </Button.Circle>
+        </div>
+
+        <div className="size-10">
+          <Button.Circle className="hover:scale-110">
+            <Icon.Less
+              className="size-full scale-40"
+              classNameInline="fill-neutral-full"
+            />
+          </Button.Circle>
+        </div>
       </div>
 
       <div className="flex gap-4">
