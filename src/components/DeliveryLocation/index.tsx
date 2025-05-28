@@ -40,7 +40,7 @@ function ChevronRight({
   ...rest
 }: PropsWithChildren<HTMLAttributes<HTMLDivElement>>) {
   return (
-    <div className="size-4 rotate-270" {...rest}>
+    <div className="size-[.85rem] rotate-270" {...rest}>
       <Icon.Chevron className="size-full" classNameInline="fill-neutral-full" />
       {children}
     </div>

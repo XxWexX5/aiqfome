@@ -1,13 +1,13 @@
 import { Button } from "@/components/Button";
-import { DeliveryLocation } from "@/components/DeliveryLocation";
 import { Icon } from "@/components/Icon";
-import { Logo } from "@/components/Logo";
-import { Profile } from "@/components/Profile";
-import { Search } from "@/components/Search";
+
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-nunito-sans)] font-semibold">
+      <Header />
+
       <p className="text-3xl">Nunito Semibold</p>
       <p className="text-3xl font-bold">Nunito Bold</p>
 
@@ -79,44 +79,6 @@ export default function Home() {
           </Button.Default>
         </div>
       </div>
-
-      <Logo />
-
-      <DeliveryLocation.Root className="flex items-center gap-4">
-        <DeliveryLocation.Pin className="size-8" />
-
-        <div className="flex flex-col gap-1">
-          <DeliveryLocation.Description className="text-primary-200">
-            entregando em
-          </DeliveryLocation.Description>
-
-          <div className="flex items-center gap-2">
-            <DeliveryLocation.Address className="text-xl">
-              Rua Mandaguari, 198
-            </DeliveryLocation.Address>
-
-            <DeliveryLocation.ChevronRight />
-          </div>
-        </div>
-      </DeliveryLocation.Root>
-
-      <Profile className="size-10 hover:scale-110" />
-
-      <Search.Root className="relative">
-        <Search.Input
-          className="size-full p-4 rounded-default pl-13"
-          placeholder="busque pela loja ou culinária"
-        />
-
-        <Search.Label>
-          <Search.Icon className="absolute left-5 top-0 bottom-0 m-auto size-5">
-            <Icon.Search
-              className="size-full"
-              classNameInline="fill-neutral-500"
-            />
-          </Search.Icon>
-        </Search.Label>
-      </Search.Root>
     </div>
   );
 }
