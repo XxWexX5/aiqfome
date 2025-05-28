@@ -27,7 +27,7 @@ export function Header() {
 
   return (
     <header className="p-6 space-y-6">
-      <div className="flex justify-between items-center md:gap-8">
+      <div className="flex justify-between items-center md:m-0 md:gap-8">
         <Logo />
 
         <DeliveryLocation.Root className="flex items-center gap-2">
