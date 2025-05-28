@@ -2,11 +2,40 @@ import { Button } from "@/components/Button";
 import { Icon } from "@/components/Icon";
 
 import { Header } from "@/components/Header";
+import { Carousel } from "@/components/Carousel";
 
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-nunito-sans)] font-semibold">
       <Header />
+
+      <main>
+        <Carousel
+          slides={[
+            {
+              src: "/assets/images/banner-01.png",
+              alt: "Banner 1",
+              fill: true,
+              objectFit: "cover",
+              priority: true,
+            },
+            {
+              src: "/assets/images/banner-02.png",
+              alt: "Banner 2",
+              fill: true,
+              objectFit: "cover",
+              priority: true,
+            },
+            {
+              src: "/assets/images/banner-03.png",
+              alt: "Banner 3",
+              fill: true,
+              objectFit: "cover",
+              priority: true,
+            },
+          ]}
+        />
+      </main>
 
       <p className="text-3xl">Nunito Semibold</p>
       <p className="text-3xl font-bold">Nunito Bold</p>

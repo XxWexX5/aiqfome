@@ -26,7 +26,7 @@ export function Header() {
   }
 
   return (
-    <div className="p-6 space-y-6">
+    <header className="p-6 space-y-6">
       <div className="flex justify-between items-center md:gap-8">
         <Logo />
 
@@ -60,6 +60,6 @@ export function Header() {
       <div className="md:hidden">
         <SearchField />
       </div>
-    </div>
+    </header>
   );
 }
