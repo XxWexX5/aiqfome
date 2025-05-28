@@ -4,7 +4,7 @@ import { Icon } from "@/components/Icon";
 import { Header } from "@/components/Header";
 import { Carousel } from "@/components/Carousel";
 import { Title } from "@/components/Title";
-import { Store } from "@/components/Store";
+import { ListStores } from "@/components/ListStores";
 
 export default function Home() {
   return (
@@ -40,115 +40,17 @@ export default function Home() {
       </main>
 
       <section className="bg-neutral-full px-5 py-8 space-y-5">
-        <Title>abertos</Title>
+        <div className="space-y-5">
+          <Title>abertos</Title>
 
-        <Store.Root className="flex items-center gap-4">
-          <div className="size-20 relative">
-            <Store.Logo
-              src="/assets/images/logo-matsuri.png"
-              alt="Logo"
-              fill
-              className="object-cover"
-            />
-          </div>
+          <ListStores />
+        </div>
 
-          <div className="flex flex-col">
-            <Store.Name className="text-lg text-neutral-700 font-bold">
-              Matsuri Concept
-            </Store.Name>
+        <div className="space-y-5 mt-12">
+          <Title>fechados</Title>
 
-            <div className="flex gap-3 items-center">
-              <Store.FreeDelivery>
-                <Icon.Bike className="size-6" classNameInline="fill-info-500" />
-
-                <p className="font-bold">grátis</p>
-              </Store.FreeDelivery>
-
-              <Store.Rate>
-                <Icon.Star
-                  className="size-5"
-                  classNameInline="fill-warning-500"
-                />
-
-                <p className="font-bold">4.7</p>
-              </Store.Rate>
-            </div>
-          </div>
-        </Store.Root>
-
-        <Store.Root className="flex items-center gap-4">
-          <div className="size-20 relative">
-            <Store.Logo
-              src="/assets/images/logo-subway.png"
-              alt="Logo"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          <div className="flex flex-col">
-            <Store.Name className="text-lg text-neutral-700 font-bold">
-              Subway - Avenida center
-            </Store.Name>
-
-            <div className="flex gap-3 items-center">
-              <Store.FreeDelivery>
-                <Icon.Motorbike
-                  className="size-6"
-                  classNameInline="fill-info-500"
-                />
-
-                <p className="font-bold text-primary-500">R$6,00</p>
-              </Store.FreeDelivery>
-
-              <Store.Rate>
-                <Icon.Star
-                  className="size-5"
-                  classNameInline="fill-warning-500"
-                />
-
-                <p className="font-bold">4.7</p>
-              </Store.Rate>
-            </div>
-          </div>
-        </Store.Root>
-
-        <Store.Root className="flex items-center gap-4">
-          <div className="size-20 relative">
-            <Store.Logo
-              src="/assets/images/logo-burger-king.png"
-              alt="Logo"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          <div className="flex flex-col">
-            <Store.Name className="text-lg text-neutral-700 font-bold">
-              Burger King - Colombo
-            </Store.Name>
-
-            <div className="flex gap-3 items-center">
-              <Store.FreeDelivery>
-                <Icon.Motorbike
-                  className="size-6"
-                  classNameInline="fill-info-500"
-                />
-
-                <p className="font-bold text-primary-500">R$6,00</p>
-              </Store.FreeDelivery>
-
-              <Store.Rate>
-                <Icon.Star
-                  className="size-5"
-                  classNameInline="fill-warning-500"
-                />
-
-                <p className="font-bold">4.7</p>
-              </Store.Rate>
-            </div>
-          </div>
-        </Store.Root>
+          <ListStores isClosed />
+        </div>
       </section>
 
       <p className="text-3xl">Nunito Semibold</p>

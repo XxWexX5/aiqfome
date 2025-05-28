@@ -19,8 +19,8 @@ function Logo({ ...rest }: ImageProps) {
   return <Image {...rest} />;
 }
 
-function Name({ ...rest }: HTMLAttributes<HTMLHeadingElement>) {
-  return <h3 {...rest}></h3>;
+function Name({ className, ...rest }: HTMLAttributes<HTMLHeadingElement>) {
+  return <h3 className={twMerge(`${className} leading-4 `)} {...rest}></h3>;
 }
 
 function FreeDelivery({ className, ...rest }: HTMLAttributes<HTMLDivElement>) {
