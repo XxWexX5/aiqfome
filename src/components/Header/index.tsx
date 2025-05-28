@@ -34,12 +34,12 @@ export function Header() {
           <DeliveryLocation.Pin className="size-8" />
 
           <div className="flex flex-col">
-            <DeliveryLocation.Description className="text-primary-200">
+            <DeliveryLocation.Description className="text-sm text-primary-200 md:text-base">
               entregando em
             </DeliveryLocation.Description>
 
             <div className="flex items-center gap-2">
-              <DeliveryLocation.Address className="text-xl">
+              <DeliveryLocation.Address className="text-base md:text-xl">
                 Rua Mandaguari, 198
               </DeliveryLocation.Address>
 

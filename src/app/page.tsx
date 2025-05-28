@@ -20,7 +20,7 @@ export default function Home() {
               priority: true,
             },
             {
-              src: "/assets/images/banner-02.png",
+              src: "/assets/images/banner-02.webp",
               alt: "Banner 2",
               fill: true,
               objectFit: "cover",
