@@ -1,3 +1,4 @@
+import { Button } from "@/components/Button";
 import { Icon } from "@/components/Icon";
 
 export default function Home() {
@@ -50,6 +51,20 @@ export default function Home() {
         <Icon.Trash className="w-10 h-10" classNameInline="fill-neutral-full" />
 
         <Icon.Edit className="w-10 h-10" classNameInline="fill-neutral-full" />
+      </div>
+
+      <div className="flex gap-4">
+        <div className="w-full max-w-sm">
+          <Button.Default className="bg-sucess-500 hover:bg-transparent hover:border-sucess-500 hover:text-sucess-500">
+            ir para pagamento
+          </Button.Default>
+        </div>
+
+        <div className="w-full max-w-sm">
+          <Button.Default className="text-neutral-full border-neutral-full hover:bg-neutral-full hover:text-primary-500">
+            Voltar para home
+          </Button.Default>
+        </div>
       </div>
     </div>
   );
