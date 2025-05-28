@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import { DeliveryLocation } from "@/components/DeliveryLocation";
 import { Icon } from "@/components/Icon";
 import { Logo } from "@/components/Logo";
 
@@ -87,6 +88,24 @@ export default function Home() {
       </div>
 
       <Logo />
+
+      <DeliveryLocation.Root className="flex items-center gap-4">
+        <DeliveryLocation.Pin className="size-8" />
+
+        <div className="flex flex-col gap-1">
+          <DeliveryLocation.Description className="text-primary-200">
+            entregando em
+          </DeliveryLocation.Description>
+
+          <div className="flex items-center gap-2">
+            <DeliveryLocation.Address className="text-xl">
+              Rua Mandaguari, 198
+            </DeliveryLocation.Address>
+
+            <DeliveryLocation.ChevronRight />
+          </div>
+        </div>
+      </DeliveryLocation.Root>
     </div>
   );
 }
