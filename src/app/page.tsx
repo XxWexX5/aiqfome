@@ -3,6 +3,7 @@ import { Icon } from "@/components/Icon";
 
 import { Header } from "@/components/Header";
 import { Carousel } from "@/components/Carousel";
+import { Title } from "@/components/Title";
 
 export default function Home() {
   return (
@@ -36,6 +37,10 @@ export default function Home() {
           ]}
         />
       </main>
+
+      <section className="bg-neutral-full">
+        <Title>abertos</Title>
+      </section>
 
       <p className="text-3xl">Nunito Semibold</p>
       <p className="text-3xl font-bold">Nunito Bold</p>

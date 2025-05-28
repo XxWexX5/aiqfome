@@ -31,7 +31,7 @@ export function Header() {
         <Logo />
 
         <DeliveryLocation.Root className="flex items-center gap-2">
-          <DeliveryLocation.Pin className="size-8" />
+          <DeliveryLocation.Pin className="size-6" />
 
           <div className="flex flex-col">
             <DeliveryLocation.Description className="text-sm text-primary-200 md:text-base">
