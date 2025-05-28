@@ -3,6 +3,7 @@ import { DeliveryLocation } from "@/components/DeliveryLocation";
 import { Icon } from "@/components/Icon";
 import { Logo } from "@/components/Logo";
 import { Profile } from "@/components/Profile";
+import { Search } from "@/components/Search";
 
 export default function Home() {
   return (
@@ -100,6 +101,22 @@ export default function Home() {
       </DeliveryLocation.Root>
 
       <Profile className="size-10 hover:scale-110" />
+
+      <Search.Root className="relative">
+        <Search.Input
+          className="size-full p-4 rounded-default pl-13"
+          placeholder="busque pela loja ou culinária"
+        />
+
+        <Search.Label>
+          <Search.Icon className="absolute left-5 top-0 bottom-0 m-auto size-5">
+            <Icon.Search
+              className="size-full"
+              classNameInline="fill-neutral-500"
+            />
+          </Search.Icon>
+        </Search.Label>
+      </Search.Root>
     </div>
   );
 }

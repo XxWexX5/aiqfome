@@ -40,6 +40,8 @@
   --color-neutral-full: var(--neutral-full);
 
   --font-sans: var(--font-nunito-sans);
+
+  --radius-default: var(--radius-xl);
 }
 
 body {
