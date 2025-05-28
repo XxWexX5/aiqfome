@@ -2,6 +2,7 @@ import { Button } from "@/components/Button";
 import { DeliveryLocation } from "@/components/DeliveryLocation";
 import { Icon } from "@/components/Icon";
 import { Logo } from "@/components/Logo";
+import { Profile } from "@/components/Profile";
 
 export default function Home() {
   return (
@@ -10,49 +11,40 @@ export default function Home() {
       <p className="text-3xl font-bold">Nunito Bold</p>
 
       <div className="flex gap-4 my-4">
-        <Icon.Pin className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Pin className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Profile
-          className="w-10 h-10"
-          classNameInline="fill-neutral-full"
-        />
+        <Icon.Profile className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Search
-          className="w-10 h-10"
-          classNameInline="fill-neutral-full"
-        />
+        <Icon.Search className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Bike className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Bike className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Star className="w-10 h-10" classNameInline="fill-warning-500" />
+        <Icon.Star className="size-10" classNameInline="fill-warning-500" />
 
-        <Icon.Motorbike className="w-10 h-10" />
+        <Icon.Motorbike className="size-10" />
 
-        <Icon.Share className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Share className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Heart className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Heart className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Money className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Money className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Chevron
-          className="w-10 h-10"
-          classNameInline="fill-neutral-full"
-        />
+        <Icon.Chevron className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Leaf className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Leaf className="size-10" classNameInline="fill-neutral-full" />
 
         <Icon.HotPepper
-          className="w-10 h-10"
+          className="size-10"
           classNameInline="fill-neutral-full"
         />
 
-        <Icon.Plus className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Plus className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Less className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Less className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Trash className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Trash className="size-10" classNameInline="fill-neutral-full" />
 
-        <Icon.Edit className="w-10 h-10" classNameInline="fill-neutral-full" />
+        <Icon.Edit className="size-10" classNameInline="fill-neutral-full" />
 
         <div className="size-10">
           <Button.Circle className="hover:scale-110">
@@ -106,6 +98,8 @@ export default function Home() {
           </div>
         </div>
       </DeliveryLocation.Root>
+
+      <Profile className="size-10 hover:scale-110" />
     </div>
   );
 }
