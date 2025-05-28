@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button";
 import { Icon } from "@/components/Icon";
+import { Logo } from "@/components/Logo";
 
 export default function Home() {
   return (
@@ -84,6 +85,8 @@ export default function Home() {
           </Button.Default>
         </div>
       </div>
+
+      <Logo />
     </div>
   );
 }
