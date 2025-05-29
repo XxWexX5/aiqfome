@@ -13,24 +13,41 @@ export default function Home() {
         <Carousel
           slides={[
             {
+              src: "/assets/images/banner-large-01.png",
+              alt: "Banner 1",
+              fill: true,
+              priority: true,
+            },
+            {
+              src: "/assets/images/banner-large-02.png",
+              alt: "Banner 2",
+              fill: true,
+              priority: true,
+            },
+            {
+              src: "/assets/images/banner-large-03.png",
+              alt: "Banner 3",
+              fill: true,
+              priority: true,
+            },
+          ]}
+          slidesMobile={[
+            {
               src: "/assets/images/banner-01.png",
               alt: "Banner 1",
               fill: true,
-              objectFit: "cover",
               priority: true,
             },
             {
               src: "/assets/images/banner-02.webp",
               alt: "Banner 2",
               fill: true,
-              objectFit: "cover",
               priority: true,
             },
             {
               src: "/assets/images/banner-03.png",
               alt: "Banner 3",
               fill: true,
-              objectFit: "cover",
               priority: true,
             },
           ]}

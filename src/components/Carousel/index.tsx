@@ -1,8 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-
 import Image from "next/image";
 
 import "swiper/css";
@@ -12,15 +12,32 @@ type SLIDE_TYPE = {
   src: string;
   alt: string;
   fill: boolean;
-  objectFit: "cover";
   priority: boolean;
 };
 
 interface CarouselProps {
   slides: SLIDE_TYPE[];
+  slidesMobile?: SLIDE_TYPE[];
 }
 
-export function Carousel({ slides }: CarouselProps) {
+export function Carousel({ slides, slidesMobile }: CarouselProps) {
+  const [currentSlides, setCurrentSlides] = useState<SLIDE_TYPE[]>(slides);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (slidesMobile && window.innerWidth < 768) {
+        setCurrentSlides(slidesMobile);
+      } else {
+        setCurrentSlides(slides);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [slides, slidesMobile]);
+
   return (
     <div className="w-full mx-auto">
       <Swiper
@@ -31,14 +48,15 @@ export function Carousel({ slides }: CarouselProps) {
         loop
         className="overflow-hidden"
       >
-        {slides.map((slide, id) => (
+        {currentSlides.map((slide, id) => (
           <SwiperSlide key={`${slide.src}-${id}`}>
-            <div className="relative w-full h-[130px] md:h-[210px]">
+            <div className="relative w-full h-[130px] md:h-[210px] lg:h-[250px]">
               <Image
                 src={slide.src}
                 alt={slide.alt}
                 fill={slide.fill}
                 priority={slide.priority}
+                className="object-cover"
               />
             </div>
           </SwiperSlide>
