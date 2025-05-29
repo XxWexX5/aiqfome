@@ -1,5 +1,7 @@
 import { Header } from "@/components/Header";
 import { Status } from "@/components/Status";
+import { InteractiveIcon } from "@/components/InteractiveIcon";
+import { Icon } from "@/components/Icon";
 
 export default function Catalog() {
   return (
@@ -10,6 +12,16 @@ export default function Catalog() {
         <Status.Info className="w-fit">
           entrega grátis acima de R$ 35,00
         </Status.Info>
+
+        <div className="flex gap-8">
+          <InteractiveIcon.LinkExternal href="/" className="hover:scale-110">
+            <Icon.Share className="size-6" classNameInline="fill-primary-500" />
+          </InteractiveIcon.LinkExternal>
+
+          <InteractiveIcon.Button className="hover:scale-110">
+            <Icon.Heart className="size-6" classNameInline="fill-primary-500" />
+          </InteractiveIcon.Button>
+        </div>
       </section>
     </div>
   );
