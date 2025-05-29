@@ -44,7 +44,7 @@ function PriceDelivery({ className, ...rest }: HTMLAttributes<HTMLDivElement>) {
 function Rate({ className, ...rest }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div
-      className={twMerge(`flex gap-1 text-neutral-600  ${className}`)}
+      className={twMerge(`flex gap-1 text-neutral-600 ${className}`)}
       {...rest}
     ></div>
   );

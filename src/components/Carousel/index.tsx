@@ -38,7 +38,6 @@ export function Carousel({ slides }: CarouselProps) {
                 src={slide.src}
                 alt={slide.alt}
                 fill={slide.fill}
-                objectFit={slide.objectFit}
                 priority={slide.priority}
               />
             </div>

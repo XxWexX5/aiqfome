@@ -1,14 +1,12 @@
-import { Button } from "@/components/Button";
-import { Icon } from "@/components/Icon";
-
 import { Header } from "@/components/Header";
 import { Carousel } from "@/components/Carousel";
 import { Title } from "@/components/Title";
 import { ListStores } from "@/components/ListStores";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-nunito-sans)] font-semibold">
+    <div className="flex flex-col min-h-screen font-[family-name:var(--font-nunito-sans)] font-semibold">
       <Header />
 
       <main>
@@ -39,7 +37,7 @@ export default function Home() {
         />
       </main>
 
-      <section className="bg-neutral-full px-5 py-8 space-y-5">
+      <section className="flex-1 bg-neutral-full px-5 py-8 space-y-5">
         <div className="space-y-5">
           <Title>abertos</Title>
 
@@ -53,77 +51,15 @@ export default function Home() {
         </div>
       </section>
 
-      <p className="text-3xl">Nunito Semibold</p>
-      <p className="text-3xl font-bold">Nunito Bold</p>
+      <Footer.Root className="text-center lg:flex lg:justify-between lg:px-5 lg:items-center lg:space-y-0">
+        <Footer.Title className="text-xl font-bold">
+          feito com 💜 em maringá-PR
+        </Footer.Title>
 
-      <div className="flex gap-4 my-4">
-        <Icon.Pin className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Profile className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Search className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Bike className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Star className="size-10" classNameInline="fill-warning-500" />
-
-        <Icon.Motorbike className="size-10" />
-
-        <Icon.Share className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Heart className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Money className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Chevron className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Leaf className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.HotPepper
-          className="size-10"
-          classNameInline="fill-neutral-full"
-        />
-
-        <Icon.Plus className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Less className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Trash className="size-10" classNameInline="fill-neutral-full" />
-
-        <Icon.Edit className="size-10" classNameInline="fill-neutral-full" />
-
-        <div className="size-10">
-          <Button.Circle className="hover:scale-110">
-            <Icon.Plus
-              className="size-full scale-70"
-              classNameInline="fill-neutral-full"
-            />
-          </Button.Circle>
-        </div>
-
-        <div className="size-10">
-          <Button.Circle className="hover:scale-110">
-            <Icon.Less
-              className="size-full scale-40"
-              classNameInline="fill-neutral-full"
-            />
-          </Button.Circle>
-        </div>
-      </div>
-
-      <div className="flex gap-4">
-        <div className="w-full max-w-sm">
-          <Button.Default className="bg-sucess-500 hover:bg-transparent hover:border-sucess-500 hover:text-sucess-500">
-            ir para pagamento
-          </Button.Default>
-        </div>
-
-        <div className="w-full max-w-sm">
-          <Button.Default className="text-neutral-full border-neutral-full hover:bg-neutral-full hover:text-primary-500">
-            Voltar para home
-          </Button.Default>
-        </div>
-      </div>
+        <Footer.Description className="text-xl font-bold max-w-md m-auto lg:m-0 lg:max-w-full">
+          aiqfome.com © 2007-2023 aiqfome LTDA. CNPJ: 09.186.786/0001-58
+        </Footer.Description>
+      </Footer.Root>
     </div>
   );
 }
