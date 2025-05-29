@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Status } from "@/components/Status";
 import { InteractiveIcon } from "@/components/InteractiveIcon";
 import { Icon } from "@/components/Icon";
+import { CatalogItem } from "@/components/Catalog";
 
 export default function Catalog() {
   return (
@@ -22,6 +23,16 @@ export default function Catalog() {
             <Icon.Heart className="size-6" classNameInline="fill-primary-500" />
           </InteractiveIcon.Button>
         </div>
+
+        <CatalogItem.MoreInfo
+          href="/"
+          className="text-info-500 font-bold flex gap-3 group"
+        >
+          mais infos
+          <div className="rotate-270 transition-transform duration-300 group-hover:translate-x-1">
+            <Icon.Chevron className="size-3" classNameInline="fill-info-500" />
+          </div>
+        </CatalogItem.MoreInfo>
       </section>
     </div>
   );
