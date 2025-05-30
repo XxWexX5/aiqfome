@@ -3,6 +3,9 @@ Este projeto é uma réplica do aplicativo Aiqfome, desenvolvido como estudo e p
 
 ![image](https://github.com/user-attachments/assets/f7aa5ff7-996a-439e-820b-443bea5c3254)
 
+## Deploy
+https://aiqfome-lyart.vercel.app
+
 ## Tecnologias Utilizadas
 - Next.js – Framework React para desenvolvimento de aplicações web rápidas e escaláveis;
 - Tailwind CSS – Biblioteca de estilos utilitária para criação de interfaces modernas e responsivas;
