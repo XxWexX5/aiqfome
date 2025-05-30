@@ -1,4 +1,4 @@
-Aiqfome Clone
+# Aiqfome Clone
 Este projeto é uma réplica do aplicativo Aiqfome, desenvolvido como estudo e prática de tecnologias modernas de front-end.
 
 ![image](https://github.com/user-attachments/assets/f7aa5ff7-996a-439e-820b-443bea5c3254)
